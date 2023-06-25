@@ -31,7 +31,7 @@ public class CameraFollow : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        UpdateAngle();
+        //UpdateAngle();
     }
 
     // Update is called once per frame
@@ -39,7 +39,7 @@ public class CameraFollow : MonoBehaviour
     {
         if (target != null)
         {
-            UpdateAngle();
+            //UpdateAngle();
             Vector3 _targetPosition = target.position + _offset;
             transform.position = Vector3.SmoothDamp(transform.position, _targetPosition, ref _velocity, smoothTime);
 
